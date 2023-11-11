@@ -10,7 +10,9 @@ import { Input } from "./components/Input"
 
 import { Container} from "./components/Container"
 
-import { LoggedIn} from './components/state/LoggedIn'
+import { LoggedIn } from './components/state/LoggedIn'
+
+import { User } from "./components/state/User"
 
 function App() {
   const personName = {
@@ -45,6 +47,7 @@ function App() {
       border: '5px solid gray', padding: '1rem'
     }}/> */}
       <LoggedIn />
+      <User />
 
     </div>
   );

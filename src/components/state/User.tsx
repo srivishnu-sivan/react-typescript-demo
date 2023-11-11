@@ -8,7 +8,7 @@ type AuthUser = {
 
 
 export const User = () => {
-    const [user, setUser] = useState< AuthUser|null>(null) 
+    const [user, setUser] = useState<AuthUser>({} as AuthUser) 
     const handleLogin = () => { 
 
         setUser({
@@ -16,9 +16,9 @@ export const User = () => {
             email: "mallikasrivishnu@gmail.com"
       })
     }
-    const handleLogout = () => { 
-        setUser(null)
-    }
+    // const handleLogout = () => { 
+    //     setUser(null)
+    // }
 
 
     return (
@@ -37,8 +37,8 @@ export const User = () => {
           Logout
             </button>
             
-            <div >User name is {user?.name} </div>
-            <div>User email is { user?.email}</div>
+            <div >User name is {user.name} </div>
+            <div>User email is { user.email}</div>
       </div>
     );
 }

@@ -14,6 +14,8 @@ import { LoggedIn } from './components/state/LoggedIn'
 
 import { User } from "./components/state/User"
 
+import {Counter} from "./components/reducer/Counter"
+
 function App() {
   const personName = {
     first: "sivan",
@@ -46,8 +48,11 @@ function App() {
       {/* <Container styles={{
       border: '5px solid gray', padding: '1rem'
     }}/> */}
-      <LoggedIn />
-      <User />
+      {/* <LoggedIn /> */}
+      {/* <User /> */}
+
+      <Counter /> 
+      
 
     </div>
   );

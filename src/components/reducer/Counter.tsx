@@ -28,7 +28,8 @@ const reducer = (state: CounterState, action: CounterAction) => {
 };
 
 export const Counter = () => {
-    const [state, dispatch] = useReducer(reducer, initialState)
+  const [state, dispatch] = useReducer(reducer, initialState)
+  
     return (
       <div>
         Count : {state.count}

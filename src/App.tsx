@@ -16,6 +16,10 @@ import { User } from "./components/state/User"
 
 import {Counter} from "./components/reducer/Counter"
 
+import { ThemeContextProvider } from "./components/context/ThemeContext"
+
+import { Box} from "./components/context/Box"
+
 function App() {
   const personName = {
     first: "sivan",
@@ -51,7 +55,11 @@ function App() {
       {/* <LoggedIn /> */}
       {/* <User /> */}
 
-      <Counter /> 
+      {/* <Counter />  */}
+
+      <ThemeContextProvider>
+        <Box/>
+      </ThemeContextProvider>
       
 
     </div>

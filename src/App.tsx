@@ -12,13 +12,16 @@ import { Container} from "./components/Container"
 
 import { LoggedIn } from './components/state/LoggedIn'
 
-import { User } from "./components/state/User"
+// import { User } from "./components/state/User"
 
 import {Counter} from "./components/reducer/Counter"
 
 import { ThemeContextProvider } from "./components/context/ThemeContext"
 
-import { Box} from "./components/context/Box"
+import { Box } from "./components/context/Box"
+
+import { User} from "./components/context/User"
+import {UserContextProvider } from "./components/context/UserContext"
 
 function App() {
   const personName = {
@@ -57,10 +60,14 @@ function App() {
 
       {/* <Counter />  */}
 
-      <ThemeContextProvider>
+      {/* <ThemeContextProvider>
         <Box/>
-      </ThemeContextProvider>
+      </ThemeContextProvider> */}
       
+
+      <UserContextProvider>
+        <User/>
+      </UserContextProvider>
 
     </div>
   );

@@ -21,7 +21,9 @@ import { ThemeContextProvider } from "./components/context/ThemeContext"
 import { Box } from "./components/context/Box"
 
 import { User} from "./components/context/User"
-import {UserContextProvider } from "./components/context/UserContext"
+import { UserContextProvider } from "./components/context/UserContext"
+
+
 
 function App() {
   const personName = {
@@ -63,11 +65,11 @@ function App() {
       {/* <ThemeContextProvider>
         <Box/>
       </ThemeContextProvider> */}
-      
 
-      <UserContextProvider>
-        <User/>
-      </UserContextProvider>
+      {/* <UserContextProvider>
+        <User />
+      </UserContextProvider> */}
+
 
     </div>
   );
